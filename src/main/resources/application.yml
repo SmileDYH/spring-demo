@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: spring-demo
+name: "bbb"

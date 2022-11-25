@@ -1,0 +1,4 @@
+name: "BBB"
+spring:
+  application:
+    name: spring-demo1
