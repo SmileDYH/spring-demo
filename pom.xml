@@ -43,6 +43,13 @@
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
             <version>3.1.0</version>
         </dependency>
+
+        <!-- Spring Boot ClassLoader -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-loader</artifactId>
+            <version>2.6.6</version>
+        </dependency>
     </dependencies>
 
     <!-- 配置远程发布到私服，mvn deploy -->
