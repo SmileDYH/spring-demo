@@ -1,8 +1,8 @@
 package com.dyh.springDemo.controller;
 
 import com.dyh.springDemo.service.DemoService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,23 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/demo")
+@Slf4j
 public class DemoController {
 
     @Autowired
     private DemoService demoService;
 
-    @Value("${name}")
-    private String name;
-
-    @Value("${spring.application.name}")
-    private String aplicationName;
-
     @GetMapping("/test")
-    public void test(){
+    public void test() {
         System.out.println("/demo/test");
         demoService.test();
-
-        System.out.println("name--->" + name);
-        System.out.println("aplicationName--->" + aplicationName);
     }
+
 }
